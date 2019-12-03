@@ -30,7 +30,7 @@ def directors_totals(nds)
       index2 += 1
     end
     puts("Here", Hash[directors_database[index1][:name], sum])
-    result.merge(Hash[directors_database[index1][:name], sum])
+    result.merge!(Hash[directors_database[index1][:name], sum])
     index2 = 0
     index1 += 1
   end
